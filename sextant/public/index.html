@@ -29,6 +29,28 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+       
+       // IPv4 address format
+          
+      fetch("https://api.ipify.org?format=json")
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(console.log("Not found...."))
+      
+      //IPv6 address format
+      
+      fetch("https://api64.ipify.org?format=json")
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(console.log("Not found...."))
+
+
+    </script>
+
+
+
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
